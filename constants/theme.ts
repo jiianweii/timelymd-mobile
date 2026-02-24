@@ -3,51 +3,79 @@
  * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
  */
 
-import { Platform } from 'react-native';
+import { Platform } from "react-native";
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+const primaryBlue = "#0a7ea4";
+const brightBlue = "#1E90FF";
+const softBlue = "#E6F3FF";
+const medicalBlue = "#0077BE";
+const oceanBlue = "#00A6B0";
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
+    // Core text - keep dark but slightly softer
+    text: "#1A2B3C",
+    // Background - pure white for maximum brightness
+    background: "#FFFFFF",
+    // Surface/elevated backgrounds (for cards, modals)
+    surface: "#F8FBFF",
+    // Primary brand color
+    tint: primaryBlue,
+    primary: primaryBlue,
+    // Accent colors
+    accent: brightBlue,
+    success: "#28A745",
+    warning: "#FFC107",
+    error: "#DC3545",
+    // Icons
+    icon: "#4A6572",
+    iconSecondary: "#7F8C8D",
+    // Tab bar
+    tabIconDefault: "#8A9BA5",
+    tabIconSelected: primaryBlue,
+    // Borders and dividers
+    border: "#E1E8ED",
+    // Card backgrounds
+    cardBackground: "#FFFFFF",
+    cardBorder: "#E1E8F0",
+    // Status/Info colors
+    info: "#17A2B8",
+    infoLight: "#D1ECF1",
+    // Appointment status colors
+    scheduled: "#0077BE",
+    completed: "#28A745",
+    cancelled: "#DC3545",
+    pending: "#FFC107",
+    // Input fields
+    inputBackground: "#F5F9FF",
+    inputBorder: "#C5D0DE",
+    inputText: "#1A2B3C",
+    placeholder: "#9AA9B7",
   },
 };
 
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
+    sans: "system-ui",
     /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
+    serif: "ui-serif",
     /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
+    rounded: "ui-rounded",
     /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
+    mono: "ui-monospace",
   },
   default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
+    sans: "normal",
+    serif: "serif",
+    rounded: "normal",
+    mono: "monospace",
   },
   web: {
     sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
+    rounded:
+      "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });

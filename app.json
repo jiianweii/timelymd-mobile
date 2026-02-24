@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "timelymd-mobile-app",
-    "slug": "timelymd-mobile-app",
+    "name": "TimelyMD",
+    "slug": "TimelyMD",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
