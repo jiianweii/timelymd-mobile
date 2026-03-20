@@ -5,11 +5,8 @@
 
 import { Platform } from "react-native";
 
-const primaryBlue = "#0a7ea4";
+const primaryBlue = "#086888";
 const brightBlue = "#1E90FF";
-const softBlue = "#E6F3FF";
-const medicalBlue = "#0077BE";
-const oceanBlue = "#00A6B0";
 
 export const Colors = {
   light: {
