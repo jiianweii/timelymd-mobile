@@ -1,7 +1,11 @@
 import { Colors } from "@/constants/theme";
 import React from "react";
-import { Keyboard, StyleSheet, TouchableWithoutFeedback } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {
+  Keyboard,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  View,
+} from "react-native";
 
 interface CustomViewProps {
   style?: object;
@@ -11,7 +15,7 @@ interface CustomViewProps {
 const CustomView = ({ style, children }: CustomViewProps) => {
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-      <SafeAreaView style={[styles.view, style]}>{children}</SafeAreaView>
+      <View style={[styles.view, style]}>{children}</View>
     </TouchableWithoutFeedback>
   );
 };
