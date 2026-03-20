@@ -12,6 +12,7 @@ export const Colors = {
   light: {
     // Core text - keep dark but slightly softer
     text: "#1A2B3C",
+    textSecondary: "#f1f1f1",
     // Background - pure white for maximum brightness
     background: "#FFFFFF",
     // Surface/elevated backgrounds (for cards, modals)
