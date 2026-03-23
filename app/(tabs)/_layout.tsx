@@ -4,6 +4,7 @@ import React from "react";
 import { HapticTab } from "@/components/haptic-tab";
 import { IconSymbol } from "@/components/ui/icon-symbol";
 import { Colors } from "@/constants/theme";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function TabLayout() {
   const tint = Colors.light.tint;
@@ -50,11 +51,11 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen
-        name="records"
+        name="chat"
         options={{
-          title: "Records",
+          title: "Chat",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={26} name="doc.text.fill" color={color} />
+            <Ionicons size={26} name="chatbubbles" color={color} />
           ),
         }}
       />
