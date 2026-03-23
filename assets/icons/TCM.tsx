@@ -1,24 +1,16 @@
-import Svg, { Path } from "react-native-svg";
+import Svg, { G, Path } from "react-native-svg";
 
 export default function TCM() {
   return (
-    <Svg width="24" height="24" viewBox="0 0 24 24">
-      <Path
-        fill="none"
-        stroke="#fff"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="m24 12.287l-1.63-1.63c-3.86-3.86-10.116-3.86-13.975 0s-3.86 10.115 0 13.974l1.63 1.63l15.598-15.597c3.866-3.866 10.123-3.866 13.982-.007s3.86 10.116 0 13.975L24 40.238"
-        stroke-width="1"
-      />
-      <Path
-        fill="none"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="m20.506 15.78l-1.63-1.63a4.94 4.94 0 1 0-6.988 6.988l1.63 1.63m3.494-3.493l-1.63-1.63m1.63 15.605l15.606-15.606M13.52 29.756L29.124 14.15a4.94 4.94 0 1 1 6.988 6.987L20.507 36.744"
-        strokeWidth="1"
-      />
+    <Svg width="24" height="24" viewBox="0 0 48 48">
+      <G fill="#fff">
+        <Path d="M38.014 7.265a3 3 0 0 0-4.02.97L27.685 18h8.248l3.42-6.671a3 3 0 0 0-1.17-3.967z" />
+        <Path
+          fill-rule="evenodd"
+          d="M43 22h-2v3c0 5.784-3.778 10.686-9 12.373V41a1 1 0 0 1-1 1H17a1 1 0 0 1-1-1v-3.627C10.778 35.686 7 30.784 7 25v-3H5v-2h38zM18 38v2h12v-2z"
+          clip-rule="evenodd"
+        />
+      </G>
     </Svg>
   );
 }
