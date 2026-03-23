@@ -1,6 +1,6 @@
 import { Fonts } from "@/constants/font";
 import { Colors } from "@/constants/theme";
-import { Ionicons } from "@expo/vector-icons";
+import { Feather, Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import CustomText from "../common/CustomText";
@@ -8,15 +8,9 @@ import CustomText from "../common/CustomText";
 const AddressSelection = () => {
   return (
     <View style={styles.outerView}>
-      <Ionicons
-        name="navigate-circle-outline"
-        color={Colors.light.textSecondary}
-        size={25}
-      />
+      <Feather name="map-pin" size={25} color={Colors.light.textSecondary} />
       <View>
-        <CustomText style={[styles.text, styles.bold]}>
-          30 Woodlands Ring Rd
-        </CustomText>
+        <CustomText style={[styles.text, styles.bold]}>Home</CustomText>
         <View style={styles.innerAddressView}>
           <CustomText style={styles.text}>Singapore, 737883</CustomText>
           <Ionicons
